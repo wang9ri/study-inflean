@@ -16,7 +16,7 @@ class MemberRepositoryTest {
     @Autowired
     private MemberRepository memberRepository;
 
-    //    @Rollback(value = false)
+//        @Rollback(value = false)
     @Transactional  // 엔티티 매니저를 이용한 데이터 변경은 Transactional 이 꼭 있어야 됨. TEST에 있으면 테스트 후 롤백함.
     @Test
     public void testMemeber() throws Exception {
