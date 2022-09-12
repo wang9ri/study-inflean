@@ -1,4 +1,4 @@
-# Study
+# 밑바닥부터 다시 Study
 1. 기본 정보 
 - gradle
   - 그루비를 이용한 빌드 자동화 시스템
@@ -16,3 +16,5 @@
   - 로그에 restartedMain 라고 뜨면 devtools 적용됨. 
   - rebuild를 하면 재시작을 안해도 적용됨.
 
+- h2 database 
+  - 개발 또는 테스트 용도로 유용함
