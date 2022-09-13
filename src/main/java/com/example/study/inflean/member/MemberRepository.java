@@ -1,6 +1,7 @@
 package com.example.study.inflean.member;
 
 
+import com.example.study.inflean.domain.Member;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

@@ -1,6 +1,7 @@
 package com.example.study.inflean.member;
 
 
+import com.example.study.inflean.domain.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

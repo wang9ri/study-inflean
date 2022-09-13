@@ -1,5 +1,6 @@
 package com.example.study.inflean.member;
 
+import com.example.study.inflean.domain.Member;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +17,13 @@ class MemberRepositoryTest {
     @Autowired
     private MemberRepository memberRepository;
 
-//        @Rollback(value = false)
+            @Rollback(value = false)
     @Transactional  // 엔티티 매니저를 이용한 데이터 변경은 Transactional 이 꼭 있어야 됨. TEST에 있으면 테스트 후 롤백함.
     @Test
     public void testMemeber() throws Exception {
         //given
         Member member = new Member();
-        member.setUsername("aa");
+        member.setName("aa");
 
         //when
         Long savedId = memberRepository.save(member);
